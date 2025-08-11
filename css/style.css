@@ -255,3 +255,37 @@ hr{
             text-decoration: none;
             color: #555;
         }
+        /* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+    /* Enlever les paddings trop larges */
+    .header-container,
+    nav,
+    .container,
+    .footer-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Réduire la taille de police des titres */
+    .header-text h1 { font-size: 2em; }
+    .header-text h2 { font-size: 1.1em; }
+    .island-card h3 { font-size: 1em; }
+    .cta-button .button { padding: 10px 20px; }
+
+    /* Images plein écran */
+    .firstimg img,
+    .lastimg img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Réorganiser la grille en une colonne */
+    .island-grid,
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    /* Bouton CTA centré et plus petit */
+    .cta-button { margin-top: 30px; }
+}
