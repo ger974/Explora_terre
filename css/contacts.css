@@ -1,65 +1,65 @@
- body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      margin: 50px;
-      padding: 0;
-      background: #f2f2f2;
-      color: #333;
-    }
-    .header-container {
-     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/** @format */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  padding: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+.header-container {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    height: 200px; /* ajuste la taille si besoin */
+  height: 200px; /* ajuste la taille si besoin */
 }
 
-    header {
-      background: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.2em;
-      font-weight: bold;
-      border-bottom: 2px solid #ccc;
-    }
-
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li a {
-    text-decoration: none;
-    color: #222; /* couleur du texte */
-    font-weight: bold;
+  text-decoration: none;
+  color: #222; /* couleur du texte */
+  font-weight: bold;
 }
 .btn {
-    background-color: #0074D9;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 20px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .btn:hover {
-    background-color: #22bbd2f3;
+  background-color: #22bbd2f3;
 }
 
 .container {
@@ -68,12 +68,12 @@ nav li a {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   text-align: center;
-  color: #006C70;
+  color: #006c70;
 }
 
 .intro {
@@ -126,7 +126,7 @@ textarea {
 }
 
 button {
-  background: #006C70;
+  background: #006c70;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -156,7 +156,6 @@ footer {
   font-size: 0.9em;
   color: #777;
 }
-
 
 @media (max-width: 600px) {
   .checkbox-group {
