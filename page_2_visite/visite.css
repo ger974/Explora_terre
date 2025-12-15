@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    .header-container {
+     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px; /* ajuste la taille si besoin */
+}
+
+    header {
+      background: #fff;
+      padding: 25px;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-bottom: 2px solid #ccc;
+    }
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #222; /* couleur du texte */
+    font-weight: bold;
+}
+.btn {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #22bbd2f3;
+}
+    /* ... existing styles ... */
+
+.image-placeholder {
+  /* Centrage vertical et horizontal */
+  display: flex;
+  align-items: center;   /* centre sur l’axe vertical */
+  justify-content: center; /* centre sur l’axe horizontal */
+  text-align: center;    /* centrer le texte à l’intérieur de la boîte (optionnel) */
+ height: 200px;
+  padding: 10px;
+  /* Si vous avez déjà un padding ou une hauteur, gardez-les */
+  
+
+  /* ... autres styles existants ... */
+}
+
+/* ... rest of the file ... */
+    /* Contenu principal */
+.main-content {
+    padding: 2rem 0;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+/* Section héro */
+.hero-section {
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.hero-description{
+    display: flex;
+    justify-content: center;
+    
+}
+.hero-content h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.hero-image .image-placeholder {
+    color: #ffffff;
+    height: 400px;
+    width:100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/johann-ocampo-wYHHpopbLrs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    
+    }
+    .article-container {
+            display: flex;
+            align-items: center;
+            justify-content:flex-end
+        }
+        /* ---------- img1-container + text1 ----------
+   Texte aligné à gauche, image centrée (ou à droite si besoin) */
+
+
+        .text1 {
+  flex-shrink: 0;                 /* évite que le texte se rétrécisse */
+  margin-right: 20px;             /* espacement vers l’image */
+  text-align: right;
+}
+       .text2 {
+  flex-shrink: 0;
+  margin-left: 20px;              /* espacement vers l’image */
+  text-align: left;
+}
+     .img1-container img{
+  display: flex;
+  justify-content: space-between; /* espace entre texte et image */
+  align-items: center; 
+  border-radius: 20px;           /* centre verticalement */
+}
+        .img2-container img{
+  display: flex;
+  justify-content: space-between; /* espace entre texte et image */
+  align-items: center;
+  border-radius: 20px;
+}
+
+    
+.galerie {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.galerie-item {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.galerie-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.galerie-item p {
+    display: flex;
+    column-gap: 5px;
+    margin: 0;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+  max-width: 80%;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+/* ---------- RESPONSIVE FOR MOBILE ---------- */
+@media (max-width: 600px) {
+  /* Container & layout */
+  .header-container,
+  nav ul,
+  .hero-section,
+  .article-container,
+  .galerie,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Logo and header sizing */
+  .logo { height: 120px; }
+  header { padding: 15px; font-size: 1.1em; }
+
+  /* Navigation links */
+  nav ul { gap: 10px; }
+  nav li a { font-size: 0.9rem; }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* Hero section text */
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content h2 { font-size: 1.2rem; }
+
+  /* Images in article sections */
+  .img1-container img,
+  .img2-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Gallery thumbnails */
+  .galerie-item img { width: 120px; height: 120px; }
+
+  /* Newsletter input */
+  .newsletter input {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Optional tweak for tablets (601–900 px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .header-container { padding: 18px 0; }
+  .logo { height: 160px; }
+  nav ul { gap: 20px; }
+}
